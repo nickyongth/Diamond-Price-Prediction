@@ -9,17 +9,17 @@ The main objective of this project is to develop a predictive model capable of a
 ## Data Set
 The dataset can be obtained on Kaggle: https://www.kaggle.com/datasets/nancyalaswad90/diamonds-prices/data
 
-**Carat Weight:** The most significant factor in diamond pricing, representing the diamond's weight and indirectly its size.
+- **Carat Weight:** The most significant factor in diamond pricing, representing the diamond's weight and indirectly its size.
 
-**Cut Quality:** This qualitative measure affects a diamond's symmetry and proportions, influencing its brilliance and overall appearance.
+- **Cut Quality:** This qualitative measure affects a diamond's symmetry and proportions, influencing its brilliance and overall appearance.
 
-**Color Grade:** A rating that reflects the absence of color in diamonds, with a scale that ranges from colorless to light yellow or brown.
+- **Color Grade:** A rating that reflects the absence of color in diamonds, with a scale that ranges from colorless to light yellow or brown.
 
-**Clarity Grade:** Indicates the presence or absence of inclusions and blemishes, impacting the diamond's purity and brilliance.
+- **Clarity Grade:** Indicates the presence or absence of inclusions and blemishes, impacting the diamond's purity and brilliance.
 
-**Additional Features:** Measurements like depth percentage, table percentage, and physical dimensions (length x width x depth) also play a role in valuation.
+- **Additional Features:** Measurements like depth percentage, table percentage, and physical dimensions (length x width x depth) also play a role in valuation.
 
-## Methodology:
+## Methodology
 
 The project is structured into distinct phases:
 
@@ -34,3 +34,11 @@ The project is structured into distinct phases:
 5. **Model Evaluation and Validation:** Rigorously testing the model using metrics like Mean Squared Error (MSE), Mean Absolute Percentage Error (MAPE), and cross-validation to assess its accuracy and robustness.
 
 6. **Optimization and Fine-tuning:** Adjusting model parameters and employing techniques like grid search to enhance the model's performance.
+
+## Results
+
+Key highlights from our results include:
+
+- **Model Performance:** The best-performing model achieved a Mean Absolute Percentage Error (MAPE) of 7.42%. This indicates a high level of precision in price prediction.
+- **Feature Importance:** Analysis revealed that features such as carat weight, color grade, and depth had the most significant impact on the diamond price.
+- **Comparative Analysis:** The XGboost model outperformed other models like linear regression, log linear regression, and log log regression in terms of performance metrics.
