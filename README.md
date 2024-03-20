@@ -40,5 +40,7 @@ The project is structured into distinct phases:
 Key highlights from our results include:
 
 - **Model Performance:** The best-performing model achieved a Mean Absolute Percentage Error (MAPE) of 7.42%. This indicates a high level of precision in price prediction.
-- **Feature Importance:** Analysis revealed that features such as carat weight, color grade, and depth had the most significant impact on the diamond price.
+- **Feature Importance:** Analysis revealed that features such as the y dimension of the diamond, carat weight, and clarity grade had the most significant impact on the diamond price.
 - **Comparative Analysis:** The XGboost model outperformed other models like linear regression, log linear regression, and log log regression in terms of performance metrics.
+
+https://github.com/nickyongth/images-/blob/main/correlationheatmapdiamonds.png
