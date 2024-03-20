@@ -43,4 +43,4 @@ Key highlights from our results include:
 - **Feature Importance:** Analysis revealed that features such as the y dimension of the diamond, carat weight, and clarity grade had the most significant impact on the diamond price.
 - **Comparative Analysis:** The XGboost model outperformed other models like linear regression, log linear regression, and log log regression in terms of performance metrics.
 
-https://github.com/nickyongth/images-/blob/main/correlationheatmapdiamonds.png
+![Correlation Heatmap](https://github.com/nickyongth/images-/blob/main/correlationheatmapdiamonds.png)
