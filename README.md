@@ -43,4 +43,35 @@ Key highlights from our results include:
 - **Feature Importance:** Analysis revealed that features such as the y dimension of the diamond, carat weight, and clarity grade had the most significant impact on the diamond price.
 - **Comparative Analysis:** The XGboost model outperformed other models like linear regression, log linear regression, and log log regression in terms of performance metrics.
 
+## Visualizations
+
+### Correlation Heatmap
 ![Correlation Heatmap](https://github.com/nickyongth/images-/blob/main/correlationheatmapdiamonds.png)
+
+This heatmap provides a visual representation of the Pearson correlation coefficients between various features related to diamonds and their prices. This is essential for understanding the relationships between the features of diamonds and can guide feature selection and engineering for predictive modeling.
+
+Observations:
+- The `carat` size shows a strong positive correlation with price, which is in line with the understanding that larger diamonds are generally more valuable.
+- The dimensions of the diamond (`x`, `y`, `z`) are highly correlated with each other, suggesting that diamonds with larger dimensions are typically heavier.
+- There's a notable positive correlation between `carat` and the dimensions, indicating that as diamonds get heavier, they generally increase in size.
+- Depth and table show less significant correlations with price, suggesting they may have a subtler effect on a diamond's value.
+
+### Log of Carat Weight vs. Log of Price by Color Grade
+![Log of Carat Weight vs. Log of Price by Color Grade](https://github.com/nickyongth/images-/blob/main/logcaratweightvslogpricebycolorgrade.png)
+
+The scatter plot transforms the carat weight and price data using a logarithmic scale, reducing skewness and allowing for better visualization of the relationship between these variables across different color grades. Points are colored according to the diamond's color grade, providing insight into how color impacts the price relative to the carat weight.
+
+Observations:
+- There is a clear positive trend, indicating that as the carat weight increases, the price tends to increase as well, even on a logarithmic scale.
+- The data spread suggests variability in price increases with higher carat weights, across all color grades.
+- Diamonds of different color grades largely overlap in price ranges, implying that while color is a factor, carat weight is a dominant predictor of price on a logarithmic scale.
+
+### Feature Importance with SHAP Values
+![Feature Importance with SHAP Values](https://github.com/nickyongth/images-/blob/main/shapdiamonds.png)
+
+This bar chart depicts the average impact of each feature on the model's output as measured by SHAP values. The mean absolute value of the SHAP values for each feature is shown, indicating the strength and significance of the feature's effect on the predictive model's price estimation. Understanding the influence of each feature helps in refining the model for better accuracy and offers insights into the aspects of diamonds that most strongly affect their market price.
+
+Observations:
+- The `y` dimension is shown to have the highest average SHAP value, suggesting a strong influence on the model's output.
+- Carat weight follows closely, reaffirming its known importance in determining diamond prices.
+- Other attributes like clarity, color, and additional dimensions (`z`, `x`) are also influential, though to a lesser extent than the `y` dimension and carat weight.
