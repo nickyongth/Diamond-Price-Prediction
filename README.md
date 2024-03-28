@@ -1,5 +1,7 @@
 # Diamond Price Prediction
 
+[Diamond](https://github.com/nickyongth/images-/blob/main/Blue%20Diamonds.png)
+
 ## Introduction
 Welcome to my Diamond Price Prediction project, an ambitious endeavor leveraging the power of data science and machine learning to unravel and predict diamond prices. Diamonds, with their timeless allure and significant economic value, are priced based on a complex interplay of characteristics. This project seeks to demystify these variables and build a predictive model that accurately forecasts the price of diamonds based on their distinct features.
 
